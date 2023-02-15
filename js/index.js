@@ -31,7 +31,6 @@ $$("#todo_form").submit((evt)=>{
     }).catch(e => {
         console.log(e.toString());
     });
-
 });
 
 firebase.database().ref('todos/').on("value", snapshot => {
